@@ -1,8 +1,10 @@
 {
   "name": "githubpage",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://shantiswarup1995.github.io/portfolio/",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4"
@@ -10,6 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
